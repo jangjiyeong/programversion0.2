@@ -458,7 +458,7 @@ public class Fragment4 extends Fragment {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
                 arr = (String[]) adapterView.getAdapter().getItem(position);
-                Toast.makeText(getContext(), Arrays.toString(arr),Toast.LENGTH_SHORT).show();
+//                Toast.makeText(getContext(), Arrays.toString(arr),Toast.LENGTH_SHORT).show();
                 item_listview_update_select_dialog(arr);
             }
         });
