@@ -1,0 +1,759 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="1200dp"
+    android:layout_height="300dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="20dp"
+            tools:ignore="MissingConstraints">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="상세한 정보 보기"
+                android:textSize="18dp"></TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:gravity="end"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/item_listview_update_soft_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/btn_background"
+                    android:text="소프트웨어"
+                    android:textColor="@android:color/white"></Button>
+
+                <Button
+                    android:id="@+id/item_listview_update_firm_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/btn_background"
+                    android:text="펌웨어"
+                    android:textColor="@android:color/white"></Button>
+
+                <Button
+                    android:id="@+id/item_listview_update_board_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/btn_background"
+                    android:text="전자보드"
+                    android:textColor="@android:color/white"></Button>
+
+                <Button
+                    android:id="@+id/item_listview_update_select_cancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_background"
+                    android:text="취소"
+                    android:textColor="@android:color/white"></Button>
+            </LinearLayout>
+        </LinearLayout>
+
+        <HorizontalScrollView
+            android:id="@+id/sw_content"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="10dp"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#0084C4"
+                    android:orientation="horizontal"
+                    tools:ignore="MissingConstraints">
+
+
+                    <TextView
+                        android:id="@+id/list_tv_temp1_sw"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:padding="5dp"
+                        android:text="No"
+                        android:textColor="@android:color/white"
+                        android:textSize="18dp"></TextView>
+
+                    <TextView
+                        android:id="@+id/list_tv_temp2_sw"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text="모델"
+                        android:textColor="@android:color/white"
+                        android:textSize="18dp"></TextView>
+
+                    <TextView
+                        android:id="@+id/list_tv_temp3_sw"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:padding="5dp"
+                        android:text="카메라"
+                        android:textColor="@android:color/white"
+                        android:textSize="18dp"></TextView>
+
+                    <TextView
+                        android:id="@+id/list_tv_temp4_sw"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:padding="5dp"
+                        android:text="해상도"
+                        android:textColor="@android:color/white"
+                        android:textSize="18dp"></TextView>
+
+                    <TextView
+                        android:id="@+id/list_tv_temp5_sw"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:padding="5dp"
+                        android:text="채널"
+                        android:textColor="@android:color/white"
+                        android:textSize="18dp"></TextView>
+
+                    <TextView
+                        android:id="@+id/list_tv_temp6_sw"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:padding="5dp"
+                        android:text="등록유형"
+                        android:textColor="@android:color/white"
+                        android:textSize="18dp"></TextView>
+
+                    <TextView
+                        android:id="@+id/list_tv_temp7_sw"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:padding="5dp"
+                        android:text="주문유형"
+                        android:textColor="@android:color/white"
+                        android:textSize="18dp"></TextView>
+
+                    <TextView
+                        android:id="@+id/list_tv_temp8_sw"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:padding="5dp"
+                        android:text="보드타입"
+                        android:textColor="@android:color/white"
+                        android:textSize="18dp"></TextView>
+
+                    <TextView
+                        android:id="@+id/list_tv_temp9_sw"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:padding="5dp"
+                        android:text="국가"
+                        android:textColor="@android:color/white"
+                        android:textSize="18dp"></TextView>
+
+
+                    <TextView
+                        android:id="@+id/list_tv_temp11_sw"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:padding="5dp"
+                        android:text="이전버전"
+                        android:textColor="@android:color/white"
+                        android:textSize="18dp"></TextView>
+
+                    <TextView
+                        android:id="@+id/list_tv_temp12_sw"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:padding="5dp"
+                        android:text="변경버전"
+                        android:textColor="@android:color/white"
+                        android:textSize="18dp"></TextView>
+
+                    <TextView
+                        android:id="@+id/list_edtName_temp13_sw"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:padding="5dp"
+                        android:text="배포일자"
+                        android:textColor="@android:color/white"
+                        android:textSize="18dp"></TextView>
+
+                    <TextView
+                        android:id="@+id/list_edtName_temp14_sw"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:padding="5dp"
+                        android:text="배포 파일명"
+                        android:textColor="@android:color/white"
+                        android:textSize="18dp"></TextView>
+
+                    <TextView
+                        android:id="@+id/list_edtName_temp15_sw"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:padding="5dp"
+                        android:text="Git Branch"
+                        android:textColor="@android:color/white"
+                        android:textSize="18dp"></TextView>
+
+                    <TextView
+                        android:id="@+id/list_edtName_temp16_sw"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:padding="5dp"
+                        android:text="변경사항"
+                        android:textColor="@android:color/white"
+                        android:textSize="18dp"></TextView>
+
+                    <TextView
+                        android:id="@+id/list_edtName_temp17_sw"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:padding="5dp"
+                        android:text="작성자"
+                        android:textColor="@android:color/white"
+                        android:textSize="18dp"></TextView>
+
+                    <TextView
+                        android:id="@+id/list_tv_temp10_sw"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:padding="5dp"
+                        android:text="세트"
+                        android:textColor="@android:color/white"
+                        android:textSize="18dp"></TextView>
+
+
+                </LinearLayout>
+
+                <ListView
+                    android:id="@+id/lv_list_sw_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@id/linear"
+                    android:layout_alignParentTop="true"
+                    android:divider="@null"></ListView>
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <HorizontalScrollView
+            android:id="@+id/fw_content"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="10dp"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#0084C4"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/list_tv_temp1_fw"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:padding="5dp"
+                        android:text="No"
+                        android:textColor="@android:color/white"
+                        android:textSize="18dp"></TextView>
+
+                    <TextView
+                        android:id="@+id/list_tv_temp2_fw"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text="모델"
+                        android:textColor="@android:color/white"
+                        android:textSize="18dp"></TextView>
+
+                    <TextView
+                        android:id="@+id/list_tv_temp3_fw"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:padding="5dp"
+                        android:text="카메라"
+                        android:textColor="@android:color/white"
+                        android:textSize="18dp"></TextView>
+
+                    <TextView
+                        android:id="@+id/list_tv_temp4_fw"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:padding="5dp"
+                        android:text="해상도"
+                        android:textColor="@android:color/white"
+                        android:textSize="18dp"></TextView>
+
+                    <TextView
+                        android:id="@+id/list_tv_temp5_fw"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:padding="5dp"
+                        android:text="채널"
+                        android:textColor="@android:color/white"
+                        android:textSize="18dp"></TextView>
+
+                    <TextView
+                        android:id="@+id/list_tv_temp6_fw"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:padding="5dp"
+                        android:text="등록유형"
+                        android:textColor="@android:color/white"
+                        android:textSize="18dp"></TextView>
+
+                    <TextView
+                        android:id="@+id/list_tv_temp7_fw"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:padding="5dp"
+                        android:text="주문유형"
+                        android:textColor="@android:color/white"
+                        android:textSize="18dp"></TextView>
+
+                    <TextView
+                        android:id="@+id/list_tv_temp8_fw"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:padding="5dp"
+                        android:text="보드종류"
+                        android:textColor="@android:color/white"
+                        android:textSize="18dp"></TextView>
+
+                    <TextView
+                        android:id="@+id/list_tv_temp9_fw"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:padding="5dp"
+                        android:text="보드타입"
+                        android:textColor="@android:color/white"
+                        android:textSize="18dp"></TextView>
+
+                    <TextView
+                        android:id="@+id/list_tv_temp10_fw"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:padding="5dp"
+                        android:text="보드버전"
+                        android:textColor="@android:color/white"
+                        android:textSize="18dp"></TextView>
+
+                    <TextView
+                        android:id="@+id/list_tv_temp11_fw"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:padding="5dp"
+                        android:text="보드코드"
+                        android:textColor="@android:color/white"
+                        android:textSize="18dp"></TextView>
+
+                    <TextView
+                        android:id="@+id/list_tv_temp12_fw"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:padding="5dp"
+                        android:text="칩셋"
+                        android:textColor="@android:color/white"
+                        android:textSize="18dp"></TextView>
+
+                    <TextView
+                        android:id="@+id/list_edtName_temp13_fw"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:padding="5dp"
+                        android:text="칩셋 부품명"
+                        android:textColor="@android:color/white"
+                        android:textSize="18dp"></TextView>
+
+                    <TextView
+                        android:id="@+id/list_edtName_temp14_fw"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:padding="5dp"
+                        android:text="칩셋"
+                        android:textColor="@android:color/white"
+                        android:textSize="18dp"></TextView>
+
+                    <TextView
+                        android:id="@+id/list_edtName_temp15_fw"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:padding="5dp"
+                        android:text="칩셋 부품명"
+                        android:textColor="@android:color/white"
+                        android:textSize="18dp"></TextView>
+
+                    <TextView
+                        android:id="@+id/list_edtName_temp16_fw"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:padding="5dp"
+                        android:text="배포 파일명"
+                        android:textColor="@android:color/white"
+                        android:textSize="18dp"></TextView>
+
+                    <TextView
+                        android:id="@+id/list_edtName_temp17_fw"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:padding="5dp"
+                        android:text="이전버전"
+                        android:textColor="@android:color/white"
+                        android:textSize="18dp"></TextView>
+
+                    <TextView
+                        android:id="@+id/list_edtName_temp18_fw"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:padding="5dp"
+                        android:text="변경버전"
+                        android:textColor="@android:color/white"
+                        android:textSize="18dp"></TextView>
+
+                    <TextView
+                        android:id="@+id/list_edtName_temp19_fw"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:padding="5dp"
+                        android:text="배포일자"
+                        android:textColor="@android:color/white"
+                        android:textSize="18dp"></TextView>
+
+                    <TextView
+                        android:id="@+id/list_edtName_temp20_fw"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:padding="5dp"
+                        android:text="변경사항"
+                        android:textColor="@android:color/white"
+                        android:textSize="18dp"></TextView>
+
+                    <TextView
+                        android:id="@+id/list_edtName_temp21_fw"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:padding="5dp"
+                        android:text="작성자"
+                        android:textColor="@android:color/white"
+                        android:textSize="18dp"></TextView>
+
+                    <TextView
+                        android:id="@+id/list_edtName_temp22_fw"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:padding="5dp"
+                        android:text="세트"
+                        android:textColor="@android:color/white"
+                        android:textSize="18dp"></TextView>
+
+
+                </LinearLayout>
+
+
+                <ListView
+                    android:id="@+id/lv_list_firmware_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@id/linear"
+                    android:layout_alignParentTop="true"
+                    android:divider="@null"></ListView>
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <HorizontalScrollView
+            android:id="@+id/board_content"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="10dp"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#0084C4"
+                    android:orientation="horizontal"
+                    >
+
+
+                    <TextView
+                        android:id="@+id/list_tv_temp0_board"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:padding="5dp"
+                        android:text="No"
+                        android:textColor="@android:color/white"
+                        android:textSize="18dp"></TextView>
+
+                    <TextView
+                        android:id="@+id/list_tv_temp1_board"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text="메뉴얼"
+                        android:textColor="@android:color/white"
+                        android:textSize="18dp"></TextView>
+
+                    <TextView
+                        android:id="@+id/list_tv_temp2_board"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:padding="5dp"
+                        android:text="보드종류"
+                        android:textColor="@android:color/white"
+                        android:textSize="18dp"></TextView>
+
+                    <TextView
+                        android:id="@+id/list_tv_temp3_board"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:padding="5dp"
+                        android:text="보드타입"
+                        android:textColor="@android:color/white"
+                        android:textSize="18dp"></TextView>
+
+                    <TextView
+                        android:id="@+id/list_tv_temp4_board"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:padding="5dp"
+                        android:text="보드버전"
+                        android:textColor="@android:color/white"
+                        android:textSize="18dp"></TextView>
+
+                    <TextView
+                        android:id="@+id/list_tv_temp5_board"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:padding="5dp"
+                        android:text="보드코드"
+                        android:textColor="@android:color/white"
+                        android:textSize="18dp"></TextView>
+
+                    <TextView
+                        android:id="@+id/list_tv_temp6_board"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:padding="5dp"
+                        android:text="칩셋"
+                        android:textColor="@android:color/white"
+                        android:textSize="18dp"></TextView>
+
+                    <TextView
+                        android:id="@+id/list_tv_temp7_board"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:padding="5dp"
+                        android:text="칩셋부품명"
+                        android:textColor="@android:color/white"
+                        android:textSize="18dp"></TextView>
+
+                    <TextView
+                        android:id="@+id/list_tv_temp8_board"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:padding="5dp"
+                        android:text="칩셋"
+                        android:textColor="@android:color/white"
+                        android:textSize="18dp"></TextView>
+
+                    <TextView
+                        android:id="@+id/list_tv_temp9_board"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:padding="5dp"
+                        android:text="칩셋부품명"
+                        android:textColor="@android:color/white"
+                        android:textSize="18dp"></TextView>
+
+                    <TextView
+                        android:id="@+id/list_tv_temp10_board"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:padding="5dp"
+                        android:text="등록유형"
+                        android:textColor="@android:color/white"
+                        android:textSize="18dp"></TextView>
+
+                    <TextView
+                        android:id="@+id/list_tv_temp11_board"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:padding="5dp"
+                        android:text="주문유형"
+                        android:textColor="@android:color/white"
+                        android:textSize="18dp"></TextView>
+
+                    <TextView
+                        android:id="@+id/list_tv_temp12_board"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:padding="5dp"
+                        android:text="모델"
+                        android:textColor="@android:color/white"
+                        android:textSize="18dp"></TextView>
+
+                    <TextView
+                        android:id="@+id/list_edtName_temp13_board"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:padding="5dp"
+                        android:text="이전버전"
+                        android:textColor="@android:color/white"
+                        android:textSize="18dp"></TextView>
+
+                    <TextView
+                        android:id="@+id/list_edtName_temp14_board"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:padding="5dp"
+                        android:text="변경버전"
+                        android:textColor="@android:color/white"
+                        android:textSize="18dp"></TextView>
+
+                    <TextView
+                        android:id="@+id/list_edtName_temp15_board"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:padding="5dp"
+                        android:text="배포일자"
+                        android:textColor="@android:color/white"
+                        android:textSize="18dp"></TextView>
+
+                    <TextView
+                        android:id="@+id/list_edtName_temp17_board"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:padding="5dp"
+                        android:text="변경사항"
+                        android:textColor="@android:color/white"
+                        android:textSize="18dp"></TextView>
+
+                    <TextView
+                        android:id="@+id/list_edtName_temp16_board"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:padding="5dp"
+                        android:text="작성자"
+                        android:textColor="@android:color/white"
+                        android:textSize="18dp"></TextView>
+
+                    <TextView
+                        android:id="@+id/list_edtName_temp18_board"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:padding="5dp"
+                        android:text="세트"
+                        android:textColor="@android:color/white"
+                        android:textSize="18dp"></TextView>
+                </LinearLayout>
+
+
+                <ListView
+                    android:id="@+id/lv_list_board_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@id/linear"
+                    android:layout_alignParentTop="true"
+                    android:divider="@null"></ListView>
+            </LinearLayout>
+        </HorizontalScrollView>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

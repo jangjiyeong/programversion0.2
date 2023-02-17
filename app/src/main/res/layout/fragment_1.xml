@@ -1,0 +1,778 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment1">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:gravity="end"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/btn_menu"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/circle_button"
+                android:textSize="24dp"
+                android:textColor="@android:color/white"
+                android:text="━"></Button>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/layout_menu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/menu_search"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:layout_marginLeft="10dp"
+                            android:text="모델"></TextView>
+
+                        <TextView
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:layout_marginLeft="10dp"
+                            android:text="카메라"></TextView>
+
+                        <TextView
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:layout_marginLeft="10dp"
+                            android:text="해상도"></TextView>
+
+                        <TextView
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:layout_marginLeft="10dp"
+                            android:text="채널"></TextView>
+
+                        <TextView
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:layout_marginLeft="10dp"
+                            android:text="등록유형"></TextView>
+
+                        <TextView
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:layout_marginLeft="10dp"
+                            android:text="주문유형"></TextView>
+
+                        <TextView
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:layout_marginLeft="10dp"
+                            android:text="보드타입"></TextView>
+
+                        <TextView
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:layout_marginLeft="10dp"
+                            android:text="국가"></TextView>
+
+                        <TextView
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:layout_marginLeft="10dp"
+                            android:text="세트"></TextView>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal">
+
+                        <Spinner
+                            android:id="@+id/temp1_spinner"
+                            android:layout_width="120dp"
+                            android:layout_height="44dp"
+                            android:background="@drawable/spinner_background"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_below="@+id/yes_btn"
+                            />
+
+                        <Spinner
+                            android:id="@+id/temp2_spinner"
+                            android:layout_width="120dp"
+                            android:layout_height="44dp"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/spinner_background"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_below="@+id/yes_btn" />
+
+                        <Spinner
+                            android:id="@+id/temp3_spinner"
+                            android:layout_width="120dp"
+                            android:layout_height="44dp"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/spinner_background"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_below="@+id/yes_btn" />
+
+                        <Spinner
+                            android:id="@+id/temp4_spinner"
+                            android:layout_width="120dp"
+                            android:layout_height="44dp"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/spinner_background"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_below="@+id/yes_btn" />
+
+                        <Spinner
+                            android:id="@+id/temp5_spinner"
+                            android:layout_width="120dp"
+                            android:layout_height="44dp"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/spinner_background"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_below="@+id/yes_btn"/>
+
+                        <Spinner
+                            android:id="@+id/temp6_spinner"
+                            android:layout_width="120dp"
+                            android:layout_height="44dp"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/spinner_background"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_below="@+id/yes_btn" />
+
+                        <Spinner
+                            android:id="@+id/temp7_spinner"
+                            android:layout_width="120dp"
+                            android:layout_height="44dp"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/spinner_background"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_below="@+id/yes_btn"/>
+
+                        <Spinner
+                            android:id="@+id/temp8_spinner"
+                            android:layout_width="120dp"
+                            android:layout_height="44dp"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/spinner_background"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_below="@+id/yes_btn" />
+
+                        <Spinner
+                            android:id="@+id/temp9_spinner"
+                            android:layout_width="120dp"
+                            android:layout_height="44dp"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/spinner_background" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:layout_marginLeft="10dp"
+                            android:text="예비1"></TextView>
+
+                        <TextView
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:layout_marginLeft="10dp"
+                            android:text="예비2"></TextView>
+
+                        <TextView
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:layout_marginLeft="10dp"
+                            android:text="예비3"></TextView>
+
+                        <TextView
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:layout_marginLeft="10dp"
+                            android:text="예비4"></TextView>
+
+                        <TextView
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:layout_marginLeft="10dp"
+                            android:text="예비5"></TextView>
+
+                        <TextView
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:layout_marginLeft="10dp"
+                            android:text="예비6"></TextView>
+
+                        <TextView
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:layout_marginLeft="10dp"
+                            android:text="예비7"></TextView>
+
+                        <TextView
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:layout_marginLeft="10dp"
+                            android:text="예비8"></TextView>
+
+                        <TextView
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:layout_marginLeft="10dp"
+                            android:text="예비9"></TextView>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <Button
+                            android:id="@+id/btn_compatibility"
+                            android:layout_width="120dp"
+                            android:layout_height="45dp"
+                            android:background="@drawable/btn_background"
+                            android:paddingRight="5dp"
+                            android:textColor="@android:color/white"
+                            android:text="호환성 등록"
+                            android:visibility="gone"/>
+
+
+                        <Spinner
+                            android:id="@+id/temp1_spinner1"
+                            android:layout_width="120dp"
+                            android:layout_height="44dp"
+                            android:background="@drawable/spinner_background" />
+
+                        <Spinner
+                            android:id="@+id/temp2_spinner1"
+                            android:layout_width="120dp"
+                            android:layout_height="44dp"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/spinner_background" />
+
+                        <Spinner
+                            android:id="@+id/temp3_spinner1"
+                            android:layout_width="120dp"
+                            android:layout_height="44dp"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/spinner_background" />
+
+                        <Spinner
+                            android:id="@+id/temp4_spinner1"
+                            android:layout_width="120dp"
+                            android:layout_height="44dp"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/spinner_background" />
+
+                        <Spinner
+                            android:id="@+id/temp5_spinner1"
+                            android:layout_width="120dp"
+                            android:layout_height="44dp"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/spinner_background"/>
+
+                        <Spinner
+                            android:id="@+id/temp6_spinner1"
+                            android:layout_width="120dp"
+                            android:layout_height="44dp"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/spinner_background" />
+
+                        <Spinner
+                            android:id="@+id/temp7_spinner1"
+                            android:layout_width="120dp"
+                            android:layout_height="44dp"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/spinner_background"/>
+
+                        <Spinner
+                            android:id="@+id/temp8_spinner1"
+                            android:layout_width="120dp"
+                            android:layout_height="44dp"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/spinner_background" />
+
+                        <Spinner
+                            android:id="@+id/temp9_spinner1"
+                            android:layout_width="120dp"
+                            android:layout_height="44dp"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/spinner_background" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <Button
+                            android:id="@+id/btn_before_version"
+                            android:layout_width="120dp"
+                            android:layout_height="45dp"
+                            android:layout_marginTop="20dp"
+                            android:background="@drawable/btn_background"
+                            android:paddingRight="5dp"
+                            android:textColor="@android:color/white"
+                            android:text="이전버전" />
+
+                        <Button
+                            android:id="@+id/btn_after_version"
+                            android:layout_width="120dp"
+                            android:layout_height="45dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="20dp"
+                            android:background="@drawable/btn_background"
+                            android:paddingRight="5dp"
+                            android:textColor="@android:color/white"
+                            android:text="변경버전" />
+
+                        <Button
+                            android:id="@+id/btn_calendar_select"
+                            android:layout_width="120dp"
+                            android:layout_height="45dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="20dp"
+                            android:background="@drawable/btn_background"
+                            android:drawableRight="@drawable/icon_chnld"
+                            android:paddingRight="5dp"
+                            android:textColor="@android:color/white"
+                            android:text="날짜선택" />
+
+                        <RelativeLayout
+                            android:layout_width="250dp"
+                            android:layout_height="53dp"
+                            android:layout_marginLeft="10dp">
+
+                            <EditText
+                                android:id="@+id/edt_file_name"
+                                android:layout_width="250dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="8dp"
+                                android:background="@drawable/text_border"
+                                android:paddingLeft="5dp"
+                                android:text="" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:background="#F0F0F0"
+                                android:text="  배포 파일명  " />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="250dp"
+                            android:layout_height="53dp"
+                            android:layout_marginLeft="10dp">
+
+                            <EditText
+                                android:id="@+id/edt_git_branch"
+                                android:layout_width="250dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="8dp"
+                                android:background="@drawable/text_border"
+                                android:paddingLeft="5dp"
+                                android:text="" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:background="#F0F0F0"
+                                android:text="  Git Branch  " />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="250dp"
+                            android:layout_height="53dp"
+                            android:layout_marginLeft="10dp">
+
+                            <EditText
+                                android:id="@+id/edt_User"
+                                android:layout_width="250dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="8dp"
+                                android:background="@drawable/text_border"
+                                android:paddingLeft="5dp"
+                                android:text="" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:background="#F0F0F0"
+                                android:text="  작성자 입력  " />
+
+
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:layout_width="900dp"
+                            android:layout_height="53dp">
+
+                            <EditText
+                                android:id="@+id/edt_Contents"
+                                android:layout_width="900dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="8dp"
+                                android:background="@drawable/text_border"
+                                android:paddingLeft="5dp"
+                                android:text="" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:background="#F0F0F0"
+                                android:text="  변경사항 입력  " />
+                        </RelativeLayout>
+
+                        <Button
+                            android:id="@+id/btn_insert_listView"
+                            android:layout_width="120dp"
+                            android:layout_height="45dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="@drawable/btn_background"
+                            android:textColor="@android:color/white"
+                            android:text="리스트등록" />
+
+                        <Button
+                            android:id="@+id/btn_select_search"
+                            android:layout_width="120dp"
+                            android:layout_height="45dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="@drawable/btn_background"
+                            android:textColor="@android:color/white"
+                            android:text="검색" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/edt_Version"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:ems="10"
+                            android:hint="변경버전 입력"
+                            android:inputType="textPersonName"
+                            android:visibility="gone" />
+
+
+                    </LinearLayout>
+                </LinearLayout>
+            </HorizontalScrollView>
+        </LinearLayout>
+</FrameLayout>
+
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="#0084C4">
+
+
+                    <TextView
+                        android:id="@+id/list_tv_temp1"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:padding="5dp"
+                        android:textColor="@android:color/white"
+                        android:text="No"
+                        android:textSize="18dp"></TextView>
+
+                    <TextView
+                        android:id="@+id/list_tv_temp2"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:textColor="@android:color/white"
+                        android:text="모델"
+                        android:textSize="18dp"></TextView>
+
+                    <TextView
+                        android:id="@+id/list_tv_temp3"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:padding="5dp"
+                        android:textColor="@android:color/white"
+                        android:text="카메라"
+                        android:textSize="18dp"></TextView>
+
+                    <TextView
+                        android:id="@+id/list_tv_temp4"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:padding="5dp"
+                        android:textColor="@android:color/white"
+                        android:text="해상도"
+                        android:textSize="18dp"></TextView>
+
+                    <TextView
+                        android:id="@+id/list_tv_temp5"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:padding="5dp"
+                        android:textColor="@android:color/white"
+                        android:text="채널"
+                        android:textSize="18dp"></TextView>
+
+                    <TextView
+                        android:id="@+id/list_tv_temp6"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:padding="5dp"
+                        android:textColor="@android:color/white"
+                        android:text="등록유형"
+                        android:textSize="18dp"></TextView>
+
+                    <TextView
+                        android:id="@+id/list_tv_temp7"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:padding="5dp"
+                        android:textColor="@android:color/white"
+                        android:text="주문유형"
+                        android:textSize="18dp"></TextView>
+
+                    <TextView
+                        android:id="@+id/list_tv_temp8"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:padding="5dp"
+                        android:textColor="@android:color/white"
+                        android:text="보드타입"
+                        android:textSize="18dp"></TextView>
+
+                    <TextView
+                        android:id="@+id/list_tv_temp9"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:padding="5dp"
+                        android:textColor="@android:color/white"
+                        android:text="국가"
+                        android:textSize="18dp"></TextView>
+
+
+
+
+                    <TextView
+                        android:id="@+id/list_tv_temp11"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:padding="5dp"
+                        android:textColor="@android:color/white"
+                        android:text="이전버전"
+                        android:textSize="18dp"></TextView>
+
+                    <TextView
+                        android:id="@+id/list_tv_temp12"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:padding="5dp"
+                        android:textColor="@android:color/white"
+                        android:text="변경버전"
+                        android:textSize="18dp"></TextView>
+
+                    <TextView
+                        android:id="@+id/list_edtName_temp13"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:padding="5dp"
+                        android:textColor="@android:color/white"
+                        android:text="배포일자"
+                        android:textSize="18dp"></TextView>
+
+                    <TextView
+                        android:id="@+id/list_edtName_temp14"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:padding="5dp"
+                        android:textColor="@android:color/white"
+                        android:text="배포 파일명"
+                        android:textSize="18dp"></TextView>
+
+                    <TextView
+                        android:id="@+id/list_edtName_temp15"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:padding="5dp"
+                        android:textColor="@android:color/white"
+                        android:text="Git Branch"
+                        android:textSize="18dp"></TextView>
+
+                    <TextView
+                        android:id="@+id/list_edtName_temp16"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:padding="5dp"
+                        android:textColor="@android:color/white"
+                        android:text="변경사항"
+                        android:textSize="18dp"></TextView>
+
+                    <TextView
+                        android:id="@+id/list_edtName_temp17"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:padding="5dp"
+                        android:textColor="@android:color/white"
+                        android:text="작성자"
+                        android:textSize="18dp"></TextView>
+
+                    <TextView
+                        android:id="@+id/list_tv_temp10"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:padding="5dp"
+                        android:textColor="@android:color/white"
+                        android:text="세트"
+                        android:textSize="18dp"></TextView>
+
+
+                </LinearLayout>
+
+                <ListView
+                    android:id="@+id/lv_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@id/linear"
+                    android:layout_alignParentTop="true"
+                    android:divider="@null"></ListView>
+            </LinearLayout>
+        </HorizontalScrollView>
+    </LinearLayout>
+</FrameLayout>

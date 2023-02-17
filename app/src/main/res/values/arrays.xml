@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="temp1" >
+        <item>전체</item>
+        <item>IA+</item>
+        <item>MINI+</item>
+        <item>PB+</item>
+        <item>TB+</item>
+        <item>KB+일반</item>
+        <item>KB+7K</item>
+        <item>KB+마늘</item>
+        <item>TB+김자반</item>
+        <item>TB+녹차</item>
+        <item>SPK+</item>
+        <item>SPK+MINI</item>
+        <item>SPK+R</item>
+        <item>특주</item>
+        <item>항목추가</item>
+    </string-array>
+
+    <string-array name="temp2" >
+        <item>전체</item>
+        <item>RGB</item>
+        <item>RGBN</item>
+        <item>INGAAS</item>
+        <item>RGB_256INGAAS</item>
+        <item>RGB_512INGAAS</item>
+        <item>RGB_1KINGAAS</item>
+        <item>항목추가</item>
+    </string-array>
+
+    <string-array name="temp3" >
+        <item>전체</item>
+        <item>256</item>
+        <item>512</item>
+        <item>1024</item>
+        <item>1335</item>
+        <item>1344</item>
+        <item>2K</item>
+        <item>5K</item>
+        <item>7K</item>
+        <item>항목추가</item>
+    </string-array>
+
+    <string-array name="temp4" >
+        <item>전체</item>
+        <item>32</item>
+        <item>42</item>
+        <item>64</item>
+        <item>84</item>
+        <item>항목추가</item>
+    </string-array>
+
+    <string-array name="temp5" >
+        <item>전체</item>
+        <item>신규</item>
+        <item>기능추가</item>
+        <item>기능개선</item>
+        <item>기능삭제</item>
+        <item>오류수정</item>
+        <item>사용불가</item>
+        <item>항목추가</item>
+    </string-array>
+
+    <string-array name="temp6" >
+        <item>전체</item>
+        <item>양산</item>
+        <item>특주</item>
+        <item>항목추가</item>
+    </string-array>
+
+    <string-array name="temp7" >
+        <item>전체</item>
+        <item>T2</item>
+        <item>T3</item>
+        <item>ZC-339A</item>
+        <item>항목추가</item>
+    </string-array>
+
+    <string-array name="temp8" >
+        <item>전체</item>
+        <item>대한민국</item>
+        <item>인도</item>
+        <item>말레이시아</item>
+        <item>러시아</item>
+        <item>중국</item>
+        <item>일본</item>
+        <item>항목추가</item>
+    </string-array>
+</resources>

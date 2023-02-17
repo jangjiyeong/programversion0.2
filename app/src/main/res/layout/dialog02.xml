@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/layout_menu"
+        android:layout_width="1200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="30dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        tools:ignore="MissingConstraints">
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/menu_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_marginLeft="10dp"
+                        android:text="모델"></TextView>
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_marginLeft="10dp"
+                        android:text="카메라"></TextView>
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_marginLeft="10dp"
+                        android:text="해상도"></TextView>
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_marginLeft="10dp"
+                        android:text="채널"></TextView>
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_marginLeft="10dp"
+                        android:text="등록유형"></TextView>
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_marginLeft="10dp"
+                        android:text="주문유형"></TextView>
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_marginLeft="10dp"
+                        android:text="보드타입"></TextView>
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_marginLeft="10dp"
+                        android:text="국가"></TextView>
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_marginLeft="10dp"
+                        android:text="세트"></TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <Spinner
+                        android:id="@+id/temp1_spinner_dialog"
+                        android:layout_width="120dp"
+                        android:layout_height="44dp"
+                        android:background="@drawable/spinner_background"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/yes_btn"
+                        />
+
+                    <Spinner
+                        android:id="@+id/temp2_spinner_dialog"
+                        android:layout_width="120dp"
+                        android:layout_height="44dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/spinner_background"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/yes_btn" />
+
+                    <Spinner
+                        android:id="@+id/temp3_spinner_dialog"
+                        android:layout_width="120dp"
+                        android:layout_height="44dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/spinner_background"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/yes_btn" />
+
+                    <Spinner
+                        android:id="@+id/temp4_spinner_dialog"
+                        android:layout_width="120dp"
+                        android:layout_height="44dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/spinner_background"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/yes_btn" />
+
+                    <Spinner
+                        android:id="@+id/temp5_spinner_dialog"
+                        android:layout_width="120dp"
+                        android:layout_height="44dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/spinner_background"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/yes_btn"/>
+
+                    <Spinner
+                        android:id="@+id/temp6_spinner_dialog"
+                        android:layout_width="120dp"
+                        android:layout_height="44dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/spinner_background"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/yes_btn" />
+
+                    <Spinner
+                        android:id="@+id/temp7_spinner_dialog"
+                        android:layout_width="120dp"
+                        android:layout_height="44dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/spinner_background"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/yes_btn"/>
+
+                    <Spinner
+                        android:id="@+id/temp8_spinner_dialog"
+                        android:layout_width="120dp"
+                        android:layout_height="44dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/spinner_background"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/yes_btn" />
+
+                    <Spinner
+                        android:id="@+id/temp9_spinner_dialog"
+                        android:layout_width="120dp"
+                        android:layout_height="44dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/spinner_background" />
+                </LinearLayout>
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <Button
+                        android:id="@+id/btn_before_version_dialog"
+                        android:layout_width="120dp"
+                        android:layout_height="45dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/btn_background"
+                        android:paddingRight="5dp"
+                        android:textColor="@android:color/white"
+                        android:text="이전버전" />
+
+                    <Button
+                        android:id="@+id/btn_after_version_dialog"
+                        android:layout_width="120dp"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/btn_background"
+                        android:paddingRight="5dp"
+                        android:textColor="@android:color/white"
+                        android:text="변경버전" />
+
+                    <Button
+                        android:id="@+id/btn_calendar_select_dialog"
+                        android:layout_width="120dp"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/btn_background"
+                        android:drawableRight="@drawable/icon_chnld"
+                        android:paddingRight="5dp"
+                        android:textColor="@android:color/white"
+                        android:text="날짜선택" />
+
+                    <RelativeLayout
+                        android:layout_width="250dp"
+                        android:layout_height="53dp"
+                        android:layout_marginLeft="10dp">
+
+                        <EditText
+                            android:id="@+id/edt_file_name_dialog"
+                            android:layout_width="250dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="8dp"
+                            android:background="@drawable/text_border"
+                            android:paddingLeft="5dp"
+                            android:text="" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:background="#FFFFFF"
+                            android:text="  배포 파일명  " />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="250dp"
+                        android:layout_height="53dp"
+                        android:layout_marginLeft="10dp">
+
+                        <EditText
+                            android:id="@+id/edt_git_branch_dialog"
+                            android:layout_width="250dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="8dp"
+                            android:background="@drawable/text_border"
+                            android:paddingLeft="5dp"
+                            android:text="" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:background="#FFFFFF"
+                            android:text="  Git Branch  " />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="250dp"
+                        android:layout_height="53dp"
+                        android:layout_marginLeft="10dp">
+
+                        <EditText
+                            android:id="@+id/edt_User_dialog"
+                            android:layout_width="250dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="8dp"
+                            android:background="@drawable/text_border"
+                            android:paddingLeft="5dp"
+                            android:text="" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:background="#FFFFFF"
+                            android:text="  작성자 입력  " />
+
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="900dp"
+                        android:layout_height="53dp">
+
+                        <EditText
+                            android:id="@+id/edt_Contents_dialog"
+                            android:layout_width="900dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="8dp"
+                            android:background="@drawable/text_border"
+                            android:paddingLeft="5dp"
+                            android:text="" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:background="#FFFFFF"
+                            android:text="  변경사항 입력  " />
+                    </RelativeLayout>
+
+                    <Button
+                        android:id="@+id/btn_item_list_update_dialog"
+                        android:layout_width="120dp"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/btn_background"
+                        android:textColor="@android:color/white"
+                        android:text="수정" />
+
+                    <Button
+                        android:id="@+id/btn_item_list_cancel_dialog"
+                        android:layout_width="120dp"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/btn_background"
+                        android:textColor="@android:color/white"
+                        android:text="취소" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </HorizontalScrollView>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

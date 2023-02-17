@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">programversion0.1</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="message">Launch count is %d</string>
+    <string name="app_message">If you like our app, please rate us</string>
+    <string name="feedback">If you like our app, please feedback</string>
+    <string name="app_rate">Rate us</string>
+    <string name="dialog_ask_later">Later</string>
+</resources>
